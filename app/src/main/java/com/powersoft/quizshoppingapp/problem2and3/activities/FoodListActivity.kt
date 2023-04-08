@@ -18,7 +18,7 @@ class FoodListActivity : AppCompatActivity() {
         binding = ActivityFoodlistBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setTitle("Organic Food")
+        title = "Organic Food"
 
         createDummyFoodList()
 

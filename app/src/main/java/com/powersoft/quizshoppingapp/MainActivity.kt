@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.powersoft.quizshoppingapp.databinding.ActivityMainBinding
 import com.powersoft.quizshoppingapp.problem2and3.activities.ShoppingActivity
+import com.powersoft.quizshoppingapp.quizapp.QuizActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnShopping.setOnClickListener {
             startActivity(Intent(this@MainActivity, ShoppingActivity::class.java))
+        }
+
+        binding.btnQuiz.setOnClickListener {
+            startActivity(Intent(this@MainActivity, QuizActivity::class.java))
         }
     }
 }

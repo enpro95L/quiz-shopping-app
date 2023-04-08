@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="12dp"
+    tools:context=".quizapp.QuizActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                style="@style/MyTextView.Medium"
+                android:text="1. Which is the top layer of android architecture ?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbOption1"
+                    style="@style/MyTextView.Small"
+                    android:text="Kernal" />
+
+                <RadioButton
+                    android:id="@+id/rbOption2"
+                    style="@style/MyTextView.Small"
+                    android:text="Application" />
+
+                <RadioButton
+                    android:id="@+id/rbOption3"
+                    style="@style/MyTextView.Small"
+                    android:text="Libraries" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvQuestion1"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                style="@style/MyTextView.Medium"
+                android:text="2. Which are the components of Android?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chkOption1"
+                    style="@style/MyTextView.Small"
+                    android:text="Content Provider" />
+
+                <CheckBox
+                    android:id="@+id/chkOption2"
+                    style="@style/MyTextView.Small"
+                    android:text="Activity" />
+
+                <CheckBox
+                    android:id="@+id/chkOption3"
+                    style="@style/MyTextView.Small"
+                    android:text="Fragment" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/MyButton"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/gray"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/MyButton"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

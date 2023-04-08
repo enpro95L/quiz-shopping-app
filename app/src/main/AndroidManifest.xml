@@ -13,6 +13,13 @@
         android:theme="@style/Theme.QuizShoppingApp"
         tools:targetApi="31">
         <activity
+            android:name=".quizapp.QuizActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -25,8 +32,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".problem2and3.activities.ShoppingActivity"/>
-        <activity android:name=".problem2and3.activities.FoodListActivity"/>
+        <activity android:name=".problem2and3.activities.ShoppingActivity" />
+        <activity android:name=".problem2and3.activities.FoodListActivity" />
     </application>
 
 </manifest>
