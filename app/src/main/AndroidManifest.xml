@@ -13,6 +13,12 @@
         android:theme="@style/Theme.QuizShoppingApp"
         tools:targetApi="31">
         <activity
+            android:name=".problem2and3.activities.BookListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".problem2and3.activities.FoodDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".quizapp.QuizActivity"
             android:exported="false">
             <meta-data

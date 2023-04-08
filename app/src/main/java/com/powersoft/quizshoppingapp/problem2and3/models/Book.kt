@@ -1,3 +1,7 @@
 package com.powersoft.quizshoppingapp.problem2and3.models
 
-data class Book(val name: String, val author: String) : java.io.Serializable
+data class Book(val name: String, val author: String) : java.io.Serializable {
+    override fun toString(): String {
+        return "$name"
+    }
+}

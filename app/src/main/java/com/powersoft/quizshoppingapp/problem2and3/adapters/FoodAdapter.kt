@@ -1,10 +1,13 @@
 package com.powersoft.quizshoppingapp.problem2and3.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.powersoft.quizshoppingapp.databinding.ItemFoodBinding
+import com.powersoft.quizshoppingapp.problem2and3.activities.FoodDetailActivity
 import com.powersoft.quizshoppingapp.problem2and3.models.Food
 
 class FoodAdapter(private val foodList: ArrayList<Food>) :
@@ -19,6 +22,11 @@ class FoodAdapter(private val foodList: ArrayList<Food>) :
             binding.tvId.text = food.id
             binding.root.setOnClickListener {
                 Toast.makeText(binding.root.context, food.name, Toast.LENGTH_SHORT).show()
+
+                var i = Intent(binding.root.context, FoodDetailActivity::class.java)
+                i.putExtra("food", food)
+                binding.root.context.startActivity(i)
+
             }
         }
     }

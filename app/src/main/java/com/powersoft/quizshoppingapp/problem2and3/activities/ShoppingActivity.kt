@@ -35,7 +35,7 @@ class ShoppingActivity : AppCompatActivity(), View.OnClickListener {
     /*This is for problem 2
     * Create new Activity with listview and show the data*/
     private fun openListViewActivity(id: String) {
-        Toast.makeText(this, "Implement ListView", Toast.LENGTH_SHORT).show()
+        startActivity(Intent(this, BookListActivity::class.java))
     }
 
     /*This is for problem 3

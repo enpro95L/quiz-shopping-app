@@ -29,7 +29,7 @@ class FoodListActivity : AppCompatActivity() {
     }
 
     private fun createDummyFoodList() {
-        foodList.add(Food("#887657", "Smucker's Uncrustables Peanut Butter & Grape Jelly Sandwich", 15.66, R.drawable.food1, ""))
+        foodList.add(Food("#887657", "Smucker's Uncrustables Peanut Butter & Grape Jelly Sandwich", 15.66, R.drawable.food1, "Imagine sinking your teeth into a warm, fluffy croissant that's been freshly baked to a golden brown perfection. As you take your first bite, you're greeted with the rich, buttery flavor that's perfectly balanced by a hint of saltiness"))
         foodList.add(Food("#298374", "Lunchables Ham &amp; American Cheese Cracker", 9.82, R.drawable.food2, ""))
         foodList.add(Food("#565784", "Fresh Bananas, Pound", 0.66, R.drawable.food3, ""))
         foodList.add(Food("#887657", "Smucker's Uncrustables Peanut Butter & Grape Jelly Sandwich", 15.66, R.drawable.food1, ""))
