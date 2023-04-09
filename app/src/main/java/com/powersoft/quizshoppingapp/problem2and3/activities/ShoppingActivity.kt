@@ -17,6 +17,8 @@ class ShoppingActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityShoppingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        title = "Shopping App"
+
         binding.cvBooks.setOnClickListener(this)
         binding.cvClothing.setOnClickListener(this)
         binding.cvOrganicFood.setOnClickListener(this)

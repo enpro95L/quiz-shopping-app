@@ -1,6 +1,5 @@
 package com.powersoft.quizshoppingapp.problem2and3.activities
 
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -16,14 +15,17 @@ class BookListActivity : AppCompatActivity() {
         binding = ActivityBookListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        title = "Book List"
+
         books = ArrayList()
         initBooks()
 
-        var adapter = ArrayAdapter<Book>(this, android.R.layout.simple_spinner_item, books)
+        val adapter = ArrayAdapter<Book>(this, android.R.layout.simple_spinner_item, books)
         binding.lview.adapter = adapter
         binding.lview.setOnItemClickListener { parent, view, position, id ->
             val item = parent.getItemAtPosition(position) as Book
-            Toast.makeText(this,"${item.name} \n authored by ${item.author}", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "${item.name} \n authored by ${item.author}", Toast.LENGTH_LONG)
+                .show()
         }
     }
 
